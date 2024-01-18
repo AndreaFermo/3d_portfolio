@@ -79,15 +79,21 @@ const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props }) => {
     canvas.addEventListener("pointerdown", handlePointerDown);
     canvas.addEventListener("pointerup", handlePointerUp);
     canvas.addEventListener("pointermove", handlePointerMove);
-    document.addEventListener("keydown", handleKeyDown);
-    document.addEventListener("keyup", handleKeyUp);
+    canvas.addEventListener("touchstart", handlePointerDown);
+    canvas.addEventListener("touchmove", handlePointerMove);
+    canvas.addEventListener("touchend", handlePointerUp);
+    window.addEventListener("keydown", handleKeyDown);
+    window.addEventListener("keyup", handleKeyUp);
 
     return () => {
       canvas.removeEventListener("pointerdown", handlePointerDown);
       canvas.removeEventListener("pointerup", handlePointerUp);
       canvas.removeEventListener("pointermove", handlePointerMove);
-      document.removeEventListener("keydown", handleKeyDown);
-      document.removeEventListener("keyup", handleKeyUp);
+      canvas.removeEventListener("touchstart", handlePointerDown);
+      canvas.removeEventListener("touchmove", handlePointerMove);
+      canvas.removeEventListener("touchend", handlePointerUp);
+      window.removeEventListener("keydown", handleKeyDown);
+      window.removeEventListener("keyup", handleKeyUp);
     };
   }, [gl, handlePointerDown, handlePointerUp, handlePointerMove]);
 
