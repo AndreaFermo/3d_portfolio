@@ -14,6 +14,13 @@ const Contact = () => {
 
   const { alert, showAlert, hideAlert } = useAlert();
 
+  const PaginaConScroll = () => {
+    useEffect(() => {
+      const ScrollToElement = document.getElementById("idScrollToElement");
+
+      ScrollToElement.scrollIntoView({ behavior: "smooth" });
+    }, []);
+  };
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
@@ -71,7 +78,10 @@ const Contact = () => {
   };
 
   return (
-    <section className="relative flex lg:flex-row flex-col max-container h-full lg:h-[100vh]">
+    <section
+      id="idScrollToElement"
+      className="relative flex lg:flex-row flex-col max-container h-full lg:h-[100vh]"
+    >
       {alert.show && <Alert {...alert} />}
       <div className="flex-1 min-w-[50%] flex flex-col">
         <h1 className="head-text">Contattami</h1>
