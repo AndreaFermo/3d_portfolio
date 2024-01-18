@@ -1,4 +1,4 @@
-import React, { Suspense, useRef, useState } from "react";
+import React, { Suspense, useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
 import Fox from "../models/Fox";
@@ -14,13 +14,6 @@ const Contact = () => {
 
   const { alert, showAlert, hideAlert } = useAlert();
 
-  const PaginaConScroll = () => {
-    useEffect(() => {
-      const ScrollToElement = document.getElementById("idScrollToElement");
-
-      ScrollToElement.scrollIntoView({ behavior: "smooth" });
-    }, []);
-  };
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
@@ -77,11 +70,12 @@ const Contact = () => {
     setCurrentAnimation("idle");
   };
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
-    <section
-      id="idScrollToElement"
-      className="relative flex lg:flex-row flex-col max-container h-full lg:h-[100vh]"
-    >
+    <section className="relative flex lg:flex-row flex-col max-container h-full lg:h-[100vh]">
       {alert.show && <Alert {...alert} />}
       <div className="flex-1 min-w-[50%] flex flex-col">
         <h1 className="head-text">Contattami</h1>
