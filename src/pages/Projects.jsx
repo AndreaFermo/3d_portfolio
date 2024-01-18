@@ -7,9 +7,9 @@ const Projects = () => {
   return (
     <section className="max-container">
       <h1 className="head-text">
-        My{" "}
+        I Miei{" "}
         <span className="blue-gradient_text font-semibold drop-shadow">
-          Projects
+          Progetti
         </span>
       </h1>
 
