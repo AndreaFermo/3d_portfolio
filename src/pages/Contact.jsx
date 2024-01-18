@@ -40,7 +40,7 @@ const Contact = () => {
         setIsLoading(false);
         showAlert({
           show: true,
-          text: "Message Sent successfully!",
+          text: "Messaggio inviato!",
           type: "success",
         });
 
@@ -56,7 +56,7 @@ const Contact = () => {
         console.log(error);
         showAlert({
           show: true,
-          text: "I didn't receive your message!",
+          text: "Purtroppo non è stato possibile inviare il messaggio!",
           type: "danger",
         });
       });
@@ -74,18 +74,18 @@ const Contact = () => {
     <section className="relative flex lg:flex-row flex-col max-container h-[100vh]">
       {alert.show && <Alert {...alert} />}
       <div className="flex-1 min-w-[50%] flex flex-col">
-        <h1 className="head-text">Get in Touch</h1>
+        <h1 className="head-text">Contattami</h1>
         <form
           className="w-full flex flex-col gap-7 mt-14"
           onSubmit={handleSubmit}
         >
           <label className="text-black-500 font-semibold">
-            Name
+            Come ti chiami?
             <input
               type="text"
               name="name"
               className="input"
-              placeholder="Jhon"
+              placeholder="Nome"
               required
               value={form.name}
               onChange={handleChange}
@@ -99,7 +99,7 @@ const Contact = () => {
               type="email"
               name="email"
               className="input"
-              placeholder="jhon@gmail.com"
+              placeholder="esempio@gmail.com"
               required
               value={form.email}
               onChange={handleChange}
@@ -108,12 +108,12 @@ const Contact = () => {
             />
           </label>
           <label className="text-black-500 font-semibold">
-            Your Message
+            Il tuo messaggio:
             <textarea
               name="message"
               rows={4}
               className="textarea"
-              placeholder="Let me no how I can help you!"
+              placeholder="Dimmi come posso aiutarti!"
               required
               value={form.message}
               onChange={handleChange}
@@ -128,7 +128,7 @@ const Contact = () => {
             onFocus={handleFocus}
             onBlur={handleBlur}
           >
-            {isLoading ? "Sending..." : "Send Message"}
+            {isLoading ? "Invio in corso..." : "Invia mssaggio"}
           </button>
         </form>
       </div>

@@ -20,28 +20,28 @@ const renderContent = {
     <h1 className="sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5">
       Ciao, sono <span className="font-semibold">Andrea</span> 👋
       <br />
-      Uno sviluppatore Italiano
+      Un programmatore Italiano
     </h1>
   ),
   2: (
     <InfoBox
-      text="Ho lavorato per diverse aziende e ho appreso diverse skills durante la mia avventura"
+      text="Ho studiato e ho appreso diverse skill durante il mio viaggio nel mondo della programmazione"
       link="/about"
-      btnText="Learn more"
+      btnText="Scopri di più"
     />
   ),
   3: (
     <InfoBox
-      text="Led multiple projects over the years. Curios about the impact?"
+      text="Ho realizzato diversi progetti. Curiosi di quello che ho fatto?"
       link="/projects"
-      btnText="Visit my portfolio"
+      btnText="Visita il mio portfolio"
     />
   ),
   4: (
     <InfoBox
-      text="Need a project done or looking for a dev? I'm just a few keystrokes away"
+      text="Hai un'idea e hai bisogno di un programmatore per realizzarla? Ti mancano pochi click!"
       link="/contact"
-      btnText="Let's talk"
+      btnText="Contattami"
     />
   ),
 };

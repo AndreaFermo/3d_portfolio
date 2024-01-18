@@ -15,9 +15,11 @@ const Projects = () => {
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, nobis
-          itaque. Distinctio id porro rem unde animi nam inventore magni quam
-          doloribus, ad exercitationem, velit cumque laboriosam ea nulla eos.
+          Ho intrapreso numerosi progetti, ma questi sono quelli che mi stanno
+          più a cuore. Molti di essi sono open source, quindi se trovi qualcosa
+          che suscita il tuo interesse, sentiti libero di esplorare il codice e
+          contribuire con le tue idee per ulteriori miglioramenti. La tua
+          collaborazione è molto apprezzata!
         </p>
       </div>
       <div className="flex flex-wrap my-20 gap-16">
@@ -43,15 +45,15 @@ const Projects = () => {
                   to={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-semibold text-blue-600"
+                  className="font-semibold text-blue-600 flex items-center"
                 >
-                  Live Link
+                  GitHub Link
+                  <img
+                    src={arrow}
+                    alt="arrow"
+                    className="w-4 h-4 inline ms-2"
+                  />
                 </Link>
-                <img
-                  src={arrow}
-                  alt="arrow"
-                  className="w-4 h-4 object-contain"
-                />
               </div>
             </div>
           </div>

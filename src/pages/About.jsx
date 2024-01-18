@@ -19,9 +19,14 @@ const About = () => {
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, nobis
-          itaque. Distinctio id porro rem unde animi nam inventore magni quam
-          doloribus, ad exercitationem, velit cumque laboriosam ea nulla eos.
+          La mia passione per la tecnologia ha guidato la mia decisione di
+          trasformare l'interesse in una carriera dinamica e appagante. Sin da
+          giovane, ho coltivato una profonda curiosità per le innovazioni nel
+          mondo della tecnologia, spaziando dall'evoluzione hardware alle nuove
+          frontiere del software. Il mio percorso professionale riflette la
+          dedizione a rimanere all'avanguardia in un ambiente tecnologico sempre
+          più competitivo. Ho acquisito competenze solide nello sviluppo
+          software, immergendomi in diversi linguaggi di programmazione.
         </p>
       </div>
 
@@ -43,12 +48,11 @@ const About = () => {
         </div>
       </div>
       <div className="py-16">
-        <h3 className="subhead-text">Esperienze Lavorative</h3>
+        <h3 className="subhead-text">Formazione ed Esperienze Lavorative</h3>
         <div className="mt-5 flex flex-col gap-3 text-slate-500">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, nobis
-            itaque. Distinctio id porro rem unde animi nam inventore magni quam
-            doloribus, ad exercitationem, velit cumque laboriosam ea nulla eos:
+            Mi sono impegnato molto, ho migliorato le mie capacità e collaborato
+            con persone brillanti. Ecco i risultati:
           </p>
         </div>
         <div className="mt-12 flex">

@@ -1,4 +1,3 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
 import {
     car,
     contact,
@@ -23,7 +22,20 @@ import {
     summiz,
     tailwindcss,
     threads,
-    typescript
+    typescript,
+    mysql,
+    vue,
+    php,
+    laravel,
+    bootstrap,
+    csharp,
+    laptop,
+    hamburger,
+    dashboard,
+    musicnote,
+    portfolio,
+    photo,
+    tictactoe
 } from "../assets/icons";
 
 export const skills = [
@@ -58,26 +70,6 @@ export const skills = [
         type: "Frontend",
     },
     {
-        imageUrl: mongodb,
-        name: "MongoDB",
-        type: "Database",
-    },
-    {
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
-    },
-    {
-        imageUrl: mui,
-        name: "Material-UI",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nextjs,
-        name: "Next.js",
-        type: "Frontend",
-    },
-    {
         imageUrl: nodejs,
         name: "Node.js",
         type: "Backend",
@@ -86,11 +78,6 @@ export const skills = [
         imageUrl: react,
         name: "React",
         type: "Frontend",
-    },
-    {
-        imageUrl: redux,
-        name: "Redux",
-        type: "State Management",
     },
     {
         imageUrl: sass,
@@ -103,65 +90,79 @@ export const skills = [
         type: "Frontend",
     },
     {
-        imageUrl: typescript,
-        name: "TypeScript",
+        imageUrl: mysql,
+        name: "MySQL",
+        type: "Database",
+    },
+    {
+        imageUrl: vue,
+        name: "vue",
         type: "Frontend",
+    },
+    {
+        imageUrl: php,
+        name: "PHP",
+        type: "Backend",
+    },
+    {
+        imageUrl: laravel,
+        name: "Laravel",
+        type: "Backend",
+    },
+    {
+        imageUrl: bootstrap,
+        name: "Bootstrap",
+        type: "Frontend",
+    },
+    {
+        imageUrl: csharp,
+        name: "C#",
+        type: "backend",
     }
 ];
 
 export const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "Full Stack Web Developer Trainee",
+        company_name: "Boolean Careers",
+        icon: laptop,
         iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
+        date: "Gennaio 2023 - Luglio 2023",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Ho sviluppato e mantenuto applicazioni web usando Vue, Laravel, MySql e tecnologie annesse.",
+            "Ho collaborato con colleghi per sviluppare applicazioni di alta qualità.",
+            "Ho implementato design reattivi e garantito la compatibilità tra browser.",
+            "Ho realizzato API funzionali con autorizzazioni di accesso per garantire la sicurezza delle stesse.",
+            "Ho partecipato alle revisioni del codice e fornito feedback costruttivi ad altri sviluppatori.",
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
+        title: "Full Stack Web Developer Trainee",
+        company_name: "Experis Academy",
+        icon: laptop,
         iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
+        date: "Novembre 2023 - Dicembre 2023",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Ho sviluppato e mantenuto applicazioni web usando React, Express, MySql e tecnologie annesse.",
+            "Ho collaborato con colleghi per sviluppare applicazioni di alta qualità.",
+            "Ho implementato design reattivi e garantito la compatibilità tra browser.",
+            "Ho realizzato API funzionali con autorizzazioni di accesso per garantire la sicurezza delle stesse.",
+            "Ho partecipato alle revisioni del codice e fornito feedback costruttivi ad altri sviluppatori.",
         ],
     },
     {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
+        title: "Full Stack Web Developer",
+        company_name: "Lavoratore autonomo",
+        icon: laptop,
         iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
+        date: "Dicembre 2023 - In corso",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Ho sviluppato e mantenuto questo sito web usando React, Three e tecnologie annesse.",
+            "Ho collaborato con colleghi per sviluppare API funzionali con autorizzazioni di accesso per garantire la sicurezza di un sito vetrina.",
+            "Ho studiato C# e applicato le nozioni apprese per realizzare piccole applicazioni console.",
+            "Sto sviluppando con Next un'applicazione dove gli utenti possono salvare i prompt più utilizzati per interrogare le AI."
         ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
+    }
 ];
 
 export const socialLinks = [
@@ -184,45 +185,46 @@ export const socialLinks = [
 
 export const projects = [
     {
-        iconUrl: pricewise,
+        iconUrl: portfolio,
         theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
+        name: 'Il Mio Portfolio',
+        description: `Ho realizzato questo fantastico portfolio con "React", sperimentando "Three", una tecnologia che non avevo ancora esplorato.`,
+        link: 'https://github.com/RicchiutiLucia/laravel-deliveboo-team7.',
     },
     {
-        iconUrl: threads,
-        theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
-    },
-    {
-        iconUrl: car,
-        theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
-    },
-    {
-        iconUrl: snapgram,
-        theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
-    },
-    {
-        iconUrl: estate,
+        iconUrl: photo,
         theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
+        name: 'Full Stack Fotoalbum',
+        description: `Ho realizzato con "Express", "MySql", "React" e "Tailwind" un'applicazione che consente di accedere alla dashboard, caricare e modificare fotografie da mostrare nella homepage`,
+        link: 'https://github.com/AndreaFermo/react-il-mio-fotoalbum',
     },
     {
-        iconUrl: summiz,
+        iconUrl: dashboard,
+        theme: 'btn-back-green',
+        name: 'CRM Dashboard',
+        description: `Ho realizzato con "Html", "CSS" e "Bootstrap" una dashboard responsive per la gestione di un istituto scolastico.`,
+        link: 'https://github.com/AndreaFermo/html-css-bootstrap-dashboard/blob/main/index.html',
+    },
+    {
+        iconUrl: musicnote,
+        theme: 'btn-back-blue',
+        name: 'Spotify Layout Clone',
+        description: `Ho riprodotto con "Html" e "CSS" il layout della nota applicazione "Spotify"`,
+        link: 'https://github.com/AndreaFermo/html-css-spotifyweb',
+    },
+    {
+        iconUrl: hamburger,
         theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
+        name: 'Full Stack Deliveroo Clone',
+        description: `Ho collaborato con alcuni talentuosi colleghi per sviluppare un sito web ispirato al noto servizio "Deliveroo", utilizzando "MySql" ed i framework "Laravel" e "Vue". Il sito consente ai ristoratori di registrarsi, caricare e modificare i propri piatti. Gli utenti hanno la possibilità di navigare tra i piatti disponibili, aggiungere articoli al carrello, effettuare ordini e completare transazioni online.`,
+        
         link: 'https://github.com/adrianhajdin/project_ai_summarizer',
-    }
+    },
+    {
+        iconUrl: tictactoe,
+        theme: 'btn-back-pink',
+        name: 'TicTacToe',
+        description: `Ho realizzato la mia versione del celebre gioco Tris, un'applicazione console con funzionalità di multigiocatore locale in "C#".`,
+        link: 'https://github.com/adrianhajdin/social_media_app',
+    }    
 ];

@@ -26,6 +26,19 @@ import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
+import mysql from './mysql.svg'
+import vue from './vue.svg'
+import php from './php.svg'
+import laravel from './laravel.svg'
+import bootstrap from './bootstrap.svg'
+import csharp from './csharp.svg'
+import laptop from './laptop.svg'
+import hamburger from './hamburger.svg'
+import dashboard from './dashboard.svg'
+import musicnote from './musicnote.svg'
+import portfolio from './portfolio.svg'
+import photo from './photo.svg'
+import tictactoe from './tictactoe.svg'
 
 export {
     css,
@@ -55,5 +68,18 @@ export {
     arrow,
     contact,
     soundon,
-    soundoff
+    soundoff,
+    mysql,
+    vue,
+    php,
+    laravel,
+    bootstrap,
+    csharp,
+    laptop,
+    hamburger,
+    dashboard,
+    musicnote,
+    portfolio,
+    photo,
+    tictactoe
 }
