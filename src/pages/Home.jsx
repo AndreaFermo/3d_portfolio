@@ -100,7 +100,7 @@ const Home = () => {
         </Suspense>
       </Canvas>
 
-      <div className={"absolute bottom-12 left-2"}>
+      <div className={"absolute bottom-[150px] left-2"}>
         <img
           src={!isPlayingMusic ? soundoff : soundon}
           alt="sound"
