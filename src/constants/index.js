@@ -189,7 +189,7 @@ export const projects = [
         theme: 'btn-back-red',
         name: 'Il Mio Portfolio',
         description: `Ho realizzato questo fantastico portfolio con "React", sperimentando "Three", una tecnologia che non avevo ancora esplorato.`,
-        link: 'https://github.com/RicchiutiLucia/laravel-deliveboo-team7.',
+        link: 'https://github.com/AndreaFermo/3d_portfolio',
     },
     {
         iconUrl: photo,
@@ -218,13 +218,13 @@ export const projects = [
         name: 'Full Stack Deliveroo Clone',
         description: `Ho collaborato con alcuni talentuosi colleghi per sviluppare un sito web ispirato al noto servizio "Deliveroo", utilizzando "MySql" ed i framework "Laravel" e "Vue". Il sito consente ai ristoratori di registrarsi, caricare e modificare i propri piatti. Gli utenti hanno la possibilità di navigare tra i piatti disponibili, aggiungere articoli al carrello, effettuare ordini e completare transazioni online.`,
         
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
+        link: 'https://github.com/RicchiutiLucia/laravel-deliveboo-team7',
     },
     {
         iconUrl: tictactoe,
         theme: 'btn-back-pink',
         name: 'TicTacToe',
         description: `Ho realizzato la mia versione del celebre gioco Tris, un'applicazione console con funzionalità di multigiocatore locale in "C#".`,
-        link: 'https://github.com/adrianhajdin/social_media_app',
+        link: 'https://github.com/AndreaFermo/tictactoe',
     }    
 ];
